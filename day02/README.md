@@ -7,7 +7,7 @@
 
 ## AI prompts
 
-### For step 1 (GUI foe circle)
+### For step 1 (GUI for circle)
 
 * Can you please write me a GUI program that gets from the user the circle radius and calculates the circle area?
 * Can you please specify in the GUI that the radius is in cm?
@@ -16,8 +16,8 @@
 
 ### For step 3 (Command line)
 
-* "What does this section do? Is it obligatory?
-    parser = argparse.ArgumentParser(
+* What does this section do? Is it obligatory?
+    "parser = argparse.ArgumentParser(
         description="Calculate the area of a triangle using base and height",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
@@ -27,23 +27,19 @@ Examples:
   python triangle_area_cli.py -b 12 --height 8
         """
     )"
-* Can you please explain me each section here?
- "# Add positional arguments
-    parser.add_argument('base', nargs='?', type=float, 
+* Can you please explain to me each section here?
+ "parser.add_argument('base', nargs='?', type=float, 
                        help='Base of the triangle')
     parser.add_argument('height', nargs='?', type=float, 
                        help='Height of the triangle')
-    
-    # Add optional arguments (alternative way to specify base and height)
+
     parser.add_argument('-b', '--base', dest='base_opt', type=float,
                        help='Base of the triangle (alternative to positional argument)')
     parser.add_argument('--height', dest='height_opt', type=float,
                        help='Height of the triangle (alternative to positional argument)')
-    
-    # Add version option
+
     parser.add_argument('--version', action='version', version='Triangle Calculator 1.0')
-    
-    # Parse arguments
+
     args = parser.parse_args()"
 * I want to make a custom error for invalid arguments. How can I do it?
 
