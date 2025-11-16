@@ -4,9 +4,13 @@ For my mice_weight_and_food_calculator script, there are limited opportunities t
 
 I asked GitHub Copilot to suggest some dependencies I can use.
 
-Just for fun, to play with dependencies I added **rich** library to make the messages/errors look nicer.
+Just for fun, to play with dependencies, I added a **rich** library to make the messages/errors look nicer.
 
-In addition, I have **pytest** library for the test file.
+In addition, I have the **pytest** library for the test file.
+To run the test, write in the terminal:
+```bash
+pytest test_mice_weight_and_food_calculator.py -v
+```
 
 ## Dependencies installation:
 
