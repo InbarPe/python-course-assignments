@@ -47,6 +47,8 @@ def validate_and_calculate(event=None):
 
     if percent_weight < 80:
         messagebox.showwarning("Warning", "Mouse weight is below 80%!")
+    if percent_weight > 100:
+        messagebox.showinfo("Attention", "Mouse weight is above 100%")
 
 # Core calculation function
 def percent_and_food_weight(current_weight, initial_weight):

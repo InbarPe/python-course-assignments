@@ -30,10 +30,10 @@ console = Console()
     (if the mouse weight < 25g --> still gets 2.5g of food)
     """
 
-if __name__ == "__main__":
 
-    # Get user inputs: current weight and initial weight
+def main():
     try:
+        # Get user inputs: current weight and initial weight
         current_weight = float(input("Please enter the mouse current weight in grams: "))
         initial_weight = float(input("Please enter the mouse initial weight in grams: "))
 
@@ -54,9 +54,17 @@ if __name__ == "__main__":
         if percent_weight < 80:
             text = Text("Warning: Mouse weight is below 80%!", style="bold red")
             console.print(text)
+        elif percent_weight > 100:
+            text = Text("Pay attention: Mouse weight is above initial weight", style="bold yellow")
+            console.print(text)
         else:
             console.print("Mouse weight is good :)", style="bold green")
         
     # If input conversion to float fails - invalid input such as letters or empty input
     except ValueError:
         console.print("Error: Please enter numbers only for weights.", style="bold red")
+
+
+if __name__ == "__main__":
+    main()
+    

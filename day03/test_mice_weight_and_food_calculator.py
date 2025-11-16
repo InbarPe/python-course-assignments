@@ -58,3 +58,11 @@ def test_equal_weights():
     initial = 25.0
     percent, food = percent_and_food_weight(current, initial)
     assert percent == 100.0, f"Expected 100%, got {percent}%"
+
+
+def test_percent_weight_above_100():
+    """Test when current weight is above initial weight (>100%)."""
+    current = 26.0
+    initial = 25.0
+    percent, food = percent_and_food_weight(current, initial)
+    assert percent > 100.0, f"Expected > 100%, got {percent}%"

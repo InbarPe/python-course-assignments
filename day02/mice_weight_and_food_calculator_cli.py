@@ -3,6 +3,7 @@ import sys
 
 # Color codes for terminal output
 RED = "\033[31m"
+YELLOW = "\033[33m"
 GREEN = "\033[32m"
 RESET = "\033[0m"
 
@@ -102,6 +103,8 @@ Examples:
     
     if percent_weight < 80:
         print(f"{RED}Warning: Mouse weight is below 80%!{RESET}")
+    elif percent_weight > 100:
+        print(f"{YELLOW} Pay attention: Mouse weight is above initial weight {RESET}")
     else:
         print(f"{GREEN}Mouse weight is good :) {RESET}")
 

@@ -1,6 +1,7 @@
 import sys
 
 RED = "\033[31m"
+YELLOW = "\033[33m"
 GREEN = "\033[32m"
 RESET = "\033[0m"
 
@@ -29,10 +30,10 @@ RESET = "\033[0m"
     (if the mouse weight < 25g --> still gets 2.5g of food)
     """
 
-if __name__ == "__main__":
 
-    # Get user inputs: current weight and initial weight
+def main():
     try:
+        # Get user inputs: current weight and initial weight
         current_weight = float(input("Please enter the mouse current weight in grams: "))
         initial_weight = float(input("Please enter the mouse initial weight in grams: "))
 
@@ -50,14 +51,21 @@ if __name__ == "__main__":
             food_weight = 2.5
         else:
             food_weight = (current_weight / 25) * 2.5
-        print(f"Mouse food weight is {food_weight}g")
+        print(f"Mouse food weight is {round(food_weight, 2)}g")
 
         # Display message about weight
         if percent_weight < 80:
             print(f"{RED} Warning: Mouse weight is below 80%! {RESET}")
+        elif percent_weight > 100:
+            print(f"{YELLOW} Pay attention: Mouse weight is above initial weight {RESET}")
         else:
             print(f"{GREEN} Mouse weight is good :) {RESET}")
         
     # If input conversion to float fails - invalid input such as letters or empty input
     except ValueError:
         print(f"{RED} Error: Please enter numbers only for weights. {RESET}")
+
+
+if __name__ == "__main__":
+    main()
+    
