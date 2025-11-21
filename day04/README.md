@@ -1,8 +1,8 @@
 # UniProt search
 
-The (UniProt website)[https://www.uniprot.org/] is used to find information about any protein.
+The [UniProt website](https://www.uniprot.org/) is used to find information about any protein.
 
-Here, I created a UI (uniprot_ui.py) and business logic (uniprot_scraper,py) scripts that let a user:
+Here, I created a UI (uniprot_ui.py) and business logic (uniprot_scraper.py) scripts that let a user:
 1. Search in UniProt with a free-text query (for example glp1\glp1 mouse...).
 2. See the first 5 matching proteins.
 3. Choose how many of the results to download.
@@ -13,9 +13,9 @@ Here, I created a UI (uniprot_ui.py) and business logic (uniprot_scraper,py) scr
 
 * The program retrieves at most 100 results (accession, gene, protein name).
 * The program includes a validation loop to ensure:
-      Input must be a number.
-      Number must be between 1 and len(results).
-      User can also type 0 to exit.
+      * Input must be a number.
+      * Number must be between 1 and len(results).
+      * User can also type 0 to exit.
 * The program uses rich library to make the messages/errors look nicer:
     ```bash
     pip install rich
