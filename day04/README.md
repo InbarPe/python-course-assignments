@@ -1,6 +1,6 @@
-# UniPort search
+# UniProt search
 
-The (UniPort website)[https://www.uniprot.org/] is used to find information about any protein.
+The (UniProt website)[https://www.uniprot.org/] is used to find information about any protein.
 
 Here, I created a UI (uniprot_ui.py) and business logic (uniprot_scraper,py) scripts that let a user:
 1. Search in UniProt with a free-text query (for example glp1\glp1 mouse...).
@@ -24,5 +24,5 @@ Here, I created a UI (uniprot_ui.py) and business logic (uniprot_scraper,py) scr
 
 # AI prompts
 
-I need to write a program that will download some data from the selected web site and save it locally in a file or in multiple files. Separate the "business logic" and the UI (User Interface), the way the program interacts with the user. I want it to be with inputs that the user need to enter to the terminal by the script demand. I want to search and save data from "UniPort". I want it to ask for a word/s to search, then based on the results in the UniPort website to write how many results there are and to save the first n based on the user choice locally in the computer.
+I need to write a program that will download some data from the selected web site and save it locally in a file or in multiple files. Separate the "business logic" and the UI (User Interface), the way the program interacts with the user. I want it to be with inputs that the user need to enter to the terminal by the script demand. I want to search and save data from "UniProt". I want it to ask for a word/s to search, then based on the results in the UniProt website to write how many results there are and to save the first n based on the user choice locally in the computer.
 
