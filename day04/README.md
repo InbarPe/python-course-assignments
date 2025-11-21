@@ -13,9 +13,9 @@ Here, I created a UI (uniprot_ui.py) and business logic (uniprot_scraper,py) scr
 
 * The program retrieves at most 100 results (accession, gene, protein name).
 * The program includes a validation loop to ensure:
-    Input must be a number.
-    Number must be between 1 and len(results).
-    User can also type 0 to exit.
+      Input must be a number.
+      Number must be between 1 and len(results).
+      User can also type 0 to exit.
 * The program uses rich library to make the messages/errors look nicer:
     ```bash
     pip install rich
