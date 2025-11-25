@@ -13,8 +13,9 @@ In the terminal run:
 python Word_Scramble.py
 ```
 
-Yot will get a scrable food-related word.
-You will be able to guess the correct word until you succsess/quit.
+You will get a scrambled food-related word.
+
+You will be able to guess the correct word until you succeed/quit.
 
 
 ## Tests
@@ -23,7 +24,7 @@ To run the test, write in the terminal:
 pytest test_word_scramble.py -v   
 ```
 
-For this you need to install *pytest*:
+For this, you need to install *pytest*:
 ``` bash
 pip install pytest
 ```
