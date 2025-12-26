@@ -1,4 +1,4 @@
-### 📄 2-Photon Calcium Imaging Analysis – README
+### 📄 2-Photon Calcium Imaging Analysis
 ## 📌 Overview
 
 This project performs basic processing and analysis of synthetic 2-photon (2p) calcium imaging data.
