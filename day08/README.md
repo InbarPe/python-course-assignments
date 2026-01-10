@@ -1,4 +1,4 @@
-### 📄 2-Photon Calcium Imaging Analysis – README
+### 📄 2-Photon Calcium Imaging Analysis
 ## 📌 Overview
 
 This project performs basic processing and analysis of synthetic 2-photon (2p) calcium imaging data.
@@ -32,9 +32,9 @@ Here: (20, 16383) → 20 neurons, 16,383 samples.
 
 ## 🔧 Code Structure
 # 1. Neuropil subtraction
-    ```bash
+    
     processed_cells = cells_data - 0.7 * neu_data
-    ```
+   
 Baseline is restored per neuron using the median neuropil value.
 
 # 2. Trial segmentation
@@ -50,10 +50,10 @@ The last 2s of the previous trial are added as baseline for the next.
 # 4. ΔF/F computation
 
 For every cell × trial:
-    ```bash
+    
     ΔF/F = (F - F0) / F0
     F0 = mean of first 2 seconds of data
-    ```
+    
 
 # 5. Response comparison
 
@@ -88,18 +88,18 @@ The script saves figures such as:
 
 Install dependencies:
 
-    ```bash
+    
     pip install numpy 
     pip install pandas 
     pip install matplotlib 
     pip install seaborn
-    ```
+    
 
 Run the script:
 
-    ```bash
+    
     python your_script_name.py
-    ```
+    
 
 Check the output images in the project folder.
 
